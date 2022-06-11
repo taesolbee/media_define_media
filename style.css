@@ -1,0 +1,54 @@
+html, body {
+      height: 100vh;
+      overflow: hidden;
+    }
+
+    .parent {
+      display:block;
+      vertical-align: center;
+      height: 100vh;
+      overflow: auto;
+      scroll-snap-type: y mandatory;
+    }
+
+    .divbox{
+      text-align: center;
+      background-color: none;
+      width: 60%;
+      margin-top: 100%;
+      margin-bottom: 100%;
+      margin-left: 20%;
+      margin-right: 20%;
+      height: 15vh;
+      scroll-snap-align: center;
+      font-size: 190%;
+      font-weight:bold;
+      line-height: 160%;
+    }
+
+    nav {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      width: 10%;
+      position: fixed;
+      height: 100%;
+      overflow: auto;
+    }
+
+    nav a {
+      display: block;
+      color: grey;
+      padding: 8px 16px;
+      text-decoration: none;
+    }
+
+    nav a.active {
+      color: black;
+    }
+
+    nav a:hover:not(.active) {
+      color: blue;
+    }
+
+  }
